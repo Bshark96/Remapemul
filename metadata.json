@@ -1,0 +1,6 @@
+{
+  "name": "Legion Go to Steam Deck Controller Studio (Python Windows App)",
+  "description": "Remap Lenovo Legion Go TrueStrike controllers (Y1-Y3, M1-M3, Trackpad, Scroll Wheel, 6-Axis Gyro) to a real Valve Steam Deck Controller (0x28DE:0x1205) for Windows Steam Input with a 100% pure-Python GUI application.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
