@@ -6,6 +6,17 @@ REM ============================================================================
 cd /d "%~dp0"
 title LegionDeck Standalone PyQt6 Windows Studio
 
+REM Check for Administrative Privileges and Auto-Elevate if needed
+net session >nul 2>&1
+if %errorLevel% neq 0 (
+    echo [ELEVATING] Requesting Administrator Privileges...
+    powershell -NoProfile -ExecutionPolicy Bypass -Command "Start-Process cmd -ArgumentList '/c `\"%~f0`\"' -Verb RunAs"
+    exit /b
+)
+
+echo Checking and enabling any disabled Lenovo Legion Go devices...
+powershell -NoProfile -Command "Get-PnpDevice | Where-Object { $_.InstanceId -like '*17EF*' -and $_.Status -eq 'Error' } | Enable-PnpDevice -Confirm:$false" >nul 2>&1
+
 if exist "C:\Program Files\USBip" set "PATH=%PATH%;C:\Program Files\USBip"
 if exist "C:\Program Files\usbip" set "PATH=%PATH%;C:\Program Files\usbip"
 if exist "C:\Program Files (x86)\USBip" set "PATH=%PATH%;C:\Program Files (x86)\USBip"

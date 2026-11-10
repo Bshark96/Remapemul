@@ -1,6 +1,0 @@
-{
-  "summary":  "Plan to fix (1) LT trigger calibration defaulting to RT due to \"left\" vs \"LT\" argument mismatch, and (2) RT trigger driving Left Stick Y to -32768 on PID 0x61EB by excluding all co-moving DirectInput axes during trigger calibration and cross-checking against Report 0x04 stick bytes (B12..15) and trigger bytes (B20/B21).",
-  "updatedAt":  "2026-11-07T18:32:19.208146232Z",
-  "requestFeedback":  true,
-  "userFacing":  true
-}

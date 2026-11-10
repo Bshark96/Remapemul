@@ -1,0 +1,376 @@
+{
+  "profileName": "Lenovo Legion Go Pure Raw HID Steam Deck Profile (HHHH Compliant)",
+  "version": "3.0.0",
+  "protocolMode": "hhhh_hardware_rawhid",
+  "devices": {
+    "vendorId": "0x17EF",
+    "productIds": [
+      "0x61EB",
+      "0x61EC",
+      "0x61ED",
+      "0x61EE",
+      "0x6182",
+      "0x6183",
+      "0x6184",
+      "0x6185"
+    ],
+    "targetInterfaces": [
+      {
+        "interface": "MI_02",
+        "usagePage": "0xFFA0",
+        "usage": "0x0001",
+        "name": "Lenovo Master MCU Telemetry & Command Channel (MI_02)"
+      },
+      {
+        "interface": "MI_01",
+        "usagePage": "0x0001",
+        "usage": "0x0002",
+        "name": "Composite Mouse, M1/M2 & Wheel (MI_01)"
+      },
+      {
+        "interface": "MI_03",
+        "usagePage": "0xFF00",
+        "usage": "0x0001",
+        "name": "BMI270 6-Axis IMU Sensor (MI_03)"
+      },
+      {
+        "interface": "MI_00",
+        "usagePage": "0x0001",
+        "usage": "0x0005",
+        "name": "Primary Gamepad HID (MI_00 / IG_00)"
+      }
+    ]
+  },
+  "buttons": {
+    "buttonA": {
+      "label": "Face Button A (Cross / South)",
+      "report_id": 4,
+      "byte": 16,
+      "mask": 16,
+      "pressed_val": 16,
+      "format_b_byte": 8,
+      "format_b_mask": 1
+    },
+    "buttonB": {
+      "label": "Face Button B (Circle / East)",
+      "report_id": 4,
+      "byte": 16,
+      "mask": 32,
+      "pressed_val": 32,
+      "format_b_byte": 8,
+      "format_b_mask": 2
+    },
+    "buttonX": {
+      "label": "Face Button X (Square / West)",
+      "report_id": 4,
+      "byte": 16,
+      "mask": 64,
+      "pressed_val": 64,
+      "format_b_byte": 8,
+      "format_b_mask": 4
+    },
+    "buttonY": {
+      "label": "Face Button Y (Triangle / North)",
+      "report_id": 4,
+      "byte": 16,
+      "mask": 128,
+      "pressed_val": 128,
+      "format_b_byte": 8,
+      "format_b_mask": 8
+    },
+    "dpadUp": {
+      "label": "D-Pad Up",
+      "report_id": 4,
+      "byte": 16,
+      "mask": 1,
+      "pressed_val": 1,
+      "format_b_byte": 7,
+      "format_b_mask": 16
+    },
+    "dpadDown": {
+      "label": "D-Pad Down",
+      "report_id": 4,
+      "byte": 16,
+      "mask": 2,
+      "pressed_val": 2,
+      "format_b_byte": 7,
+      "format_b_mask": 32
+    },
+    "dpadLeft": {
+      "label": "D-Pad Left",
+      "report_id": 4,
+      "byte": 16,
+      "mask": 4,
+      "pressed_val": 4,
+      "format_b_byte": 7,
+      "format_b_mask": 64
+    },
+    "dpadRight": {
+      "label": "D-Pad Right",
+      "report_id": 4,
+      "byte": 16,
+      "mask": 8,
+      "pressed_val": 8,
+      "format_b_byte": 7,
+      "format_b_mask": 128
+    },
+    "buttonRT": {
+      "label": "Right Trigger Digital (RT / R2)",
+      "report_id": 4,
+      "byte": 17,
+      "mask": 1,
+      "pressed_val": 1,
+      "format_b_byte": 8,
+      "format_b_mask": 128
+    },
+    "buttonRB": {
+      "label": "Right Bumper (RB / M1 Unified)",
+      "report_id": 4,
+      "byte": 17,
+      "mask": 2,
+      "pressed_val": 2,
+      "format_b_byte": 8,
+      "format_b_mask": 64,
+      "mouse_report_id": 2,
+      "mouse_byte": 1,
+      "mouse_mask": 8
+    },
+    "buttonLT": {
+      "label": "Left Trigger Digital (LT / L2)",
+      "report_id": 4,
+      "byte": 17,
+      "mask": 4,
+      "pressed_val": 4,
+      "format_b_byte": 8,
+      "format_b_mask": 32
+    },
+    "buttonLB": {
+      "label": "Left Bumper (LB / L1)",
+      "report_id": 4,
+      "byte": 17,
+      "mask": 8,
+      "pressed_val": 8,
+      "format_b_byte": 8,
+      "format_b_mask": 16
+    },
+    "buttonView": {
+      "label": "View Button (Select / -)",
+      "report_id": 4,
+      "byte": 17,
+      "mask": 16,
+      "pressed_val": 16,
+      "format_b_byte": 9,
+      "format_b_mask": 1
+    },
+    "buttonMenu": {
+      "label": "Menu Button (Start / +)",
+      "report_id": 4,
+      "byte": 17,
+      "mask": 32,
+      "pressed_val": 32,
+      "format_b_byte": 9,
+      "format_b_mask": 2
+    },
+    "leftStickClick": {
+      "label": "Left Stick Click (L3 / LS)",
+      "report_id": 4,
+      "byte": 17,
+      "mask": 64,
+      "pressed_val": 64,
+      "format_b_byte": 7,
+      "format_b_mask": 1
+    },
+    "rightStickClick": {
+      "label": "Right Stick Click (R3 / RS)",
+      "report_id": 4,
+      "byte": 17,
+      "mask": 128,
+      "pressed_val": 128,
+      "format_b_byte": 7,
+      "format_b_mask": 2
+    },
+    "legionLButton": {
+      "label": "Legion L (Space / Top Left System)",
+      "report_id": 4,
+      "byte": 18,
+      "mask": 1,
+      "pressed_val": 1,
+      "format_b_byte": 7,
+      "format_b_mask": 4
+    },
+    "legionRButton": {
+      "label": "Legion R (Quick Settings / Top Right System)",
+      "report_id": 4,
+      "byte": 18,
+      "mask": 2,
+      "pressed_val": 2,
+      "format_b_byte": 7,
+      "format_b_mask": 8
+    },
+    "buttonM2": {
+      "label": "M2 (Right Handle Side Lower Edge)",
+      "report_id": 4,
+      "byte": 19,
+      "mask": 1,
+      "pressed_val": 1,
+      "format_b_byte": 10,
+      "format_b_mask": 32,
+      "mouse_report_id": 2,
+      "mouse_byte": 1,
+      "mouse_mask": 16
+    },
+    "buttonM3": {
+      "label": "M3 (Right Rear Outer Paddle)",
+      "report_id": 4,
+      "byte": 19,
+      "mask": 2,
+      "pressed_val": 2,
+      "format_b_byte": 10,
+      "format_b_mask": 64
+    },
+    "buttonM4": {
+      "label": "M4 (Right Rear Lower Auxiliary)",
+      "report_id": 4,
+      "byte": 19,
+      "mask": 4,
+      "pressed_val": 4,
+      "format_b_byte": 10,
+      "format_b_mask": 128
+    },
+    "buttonY1": {
+      "label": "Y1 (Left Handle Upper Rear Paddle)",
+      "report_id": 4,
+      "byte": 19,
+      "mask": 8,
+      "pressed_val": 8,
+      "format_b_byte": 10,
+      "format_b_mask": 2
+    },
+    "buttonY2": {
+      "label": "Y2 (Left Handle Lower Rear Paddle)",
+      "report_id": 4,
+      "byte": 19,
+      "mask": 16,
+      "pressed_val": 16,
+      "format_b_byte": 10,
+      "format_b_mask": 4
+    },
+    "buttonY3": {
+      "label": "Y3 (Right Handle Inner Rear Paddle)",
+      "report_id": 4,
+      "byte": 19,
+      "mask": 32,
+      "pressed_val": 32,
+      "format_b_byte": 10,
+      "format_b_mask": 8
+    },
+    "scrollWheelClick": {
+      "label": "Scroll Wheel Click (Middle Click)",
+      "report_id": 4,
+      "byte": 19,
+      "mask": 64,
+      "pressed_val": 64,
+      "format_b_byte": 9,
+      "format_b_mask": 4,
+      "mouse_report_id": 2,
+      "mouse_byte": 1,
+      "mouse_mask": 4
+    },
+    "buttonM1": {
+      "label": "M1 (Right Top Edge Switch)",
+      "report_id": 4,
+      "byte": 17,
+      "mask": 2,
+      "pressed_val": 2,
+      "format_b_byte": 10,
+      "format_b_mask": 16,
+      "mouse_report_id": 2,
+      "mouse_byte": 1,
+      "mouse_mask": 8
+    }
+  },
+  "analogSticks": {
+    "formatA": {
+      "leftStickX": { "byte": 12, "center": 128, "formula": "(int(B12) - 128) * 256" },
+      "leftStickY": { "byte": 13, "center": 128, "formula": "(128 - int(B13)) * 256" },
+      "rightStickX": { "byte": 14, "center": 128, "formula": "(int(B14) - 128) * 256" },
+      "rightStickY": { "byte": 15, "center": 128, "formula": "(128 - int(B15)) * 256" },
+      "deadzone": 8
+    },
+    "formatB": {
+      "leftStickX": { "byte": 14, "center": 128, "invert": false, "deadzone": 8 },
+      "leftStickY": { "byte": 15, "center": 128, "invert": true, "deadzone": 8 },
+      "rightStickX": { "byte": 16, "center": 128, "invert": false, "deadzone": 8 },
+      "rightStickY": { "byte": 17, "center": 128, "invert": true, "deadzone": 8 }
+    }
+  },
+  "analogTriggers": {
+    "formatA": {
+      "leftTrigger": { "byte": 20, "scaleTo32767": "int(B20) * 32767 // 255" },
+      "rightTrigger": { "byte": 21, "scaleTo32767": "int(B21) * 32767 // 255" }
+    },
+    "formatB": {
+      "leftTrigger": { "byte": 19, "scaleTo32767": "int(B19) * 32767 // 255" },
+      "rightTrigger": { "byte": 20, "scaleTo32767": "int(B20) * 32767 // 255" }
+    }
+  },
+  "steamDeckRemap": {
+    "buttonA": "buttonA",
+    "buttonB": "buttonB",
+    "buttonX": "buttonX",
+    "buttonY": "buttonY",
+    "buttonLB": "buttonL1",
+    "buttonRB": "buttonR1",
+    "buttonLT": "buttonL2Digital",
+    "buttonRT": "buttonR2Digital",
+    "leftStickClick": "buttonL3Click",
+    "rightStickClick": "buttonR3Click",
+    "buttonView": "buttonView",
+    "buttonMenu": "buttonMenu",
+    "dpadUp": "dpadUp",
+    "dpadDown": "dpadDown",
+    "dpadLeft": "dpadLeft",
+    "dpadRight": "dpadRight",
+    "legionLButton": "buttonSteam",
+    "legionRButton": "buttonQuickAccess",
+    "buttonY1": "buttonL4Grip",
+    "buttonY2": "buttonL5Grip",
+    "buttonY3": "buttonR5Grip",
+    "buttonM1": "buttonR1",
+    "buttonM2": "buttonR4Grip",
+    "buttonM3": "buttonR4Grip",
+    "buttonM4": "none",
+    "scrollWheelClick": "buttonQuickAccess",
+    "scrollWheelUp": "none",
+    "scrollWheelDown": "none"
+  },
+  "hidHideSettings": {
+    "autoCloakOnStart": true,
+    "uncloakOnExit": true,
+    "restartPhysicalPnpOnCloak": true,
+    "targetPids": [
+      "0x61EB",
+      "0x61EC",
+      "0x61ED",
+      "0x61EE",
+      "0x6182",
+      "0x6183",
+      "0x6184",
+      "0x6185"
+    ],
+    "hidePatterns": [
+      "USB\\VID_17EF&PID_*&IG_00*",
+      "HID\\VID_17EF&PID_*&MI_00*",
+      "HID\\VID_17EF&PID_*&IG_00*"
+    ],
+    "neverHidePatterns": [
+      "HID\\VID_17EF&PID_*&MI_01*"
+    ]
+  },
+  "usbipSettings": {
+    "port": 3240,
+    "autoStart": false,
+    "autoAttachClient": true
+  },
+  "minimizeToTrayOnClose": true
+}
